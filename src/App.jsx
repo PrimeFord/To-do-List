@@ -66,7 +66,7 @@ function App() {
         </ol> */}
         {todo.map((e, index) => (
           <div
-            onClick={toggleCompleted}
+            onClick={() => toggleCompleted(index)}
             className="text-black w-[90%] lg:w-[50%] items-center font-[400] text-[1.2rem] flex gap-2"
           >
             <input type="checkbox" checked={e.isCompleted} />
